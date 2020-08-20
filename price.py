@@ -1,10 +1,6 @@
 answer = []
 
 
-def solution(prices, idx):
-    if len(prices)
-
-
 def solution(prices):
     answer = []
     for i in range(len(prices)):
