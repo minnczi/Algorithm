@@ -13,9 +13,12 @@
 # 각 컴퓨터는 0부터 n-1인 정수로 표현합니다.
 # i번 컴퓨터와 j번 컴퓨터가 연결되어 있으면 computers[i][j]를 1로 표현합니다.
 # computer[i][i]는 항상 1입니다.
-# visited_list = []
-# answer = 0
+
 #####################################################
+
+visited_list = []
+answer = 0
+
 
 def find_one_connection(n, computers, n_start_queue):
     global answer
@@ -76,5 +79,3 @@ def solution(n, computers):
 #             find_one_connection(n, computers, idx)
 #     return answer
 
-
-# Attempt 3

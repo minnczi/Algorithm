@@ -39,6 +39,6 @@ def solution(n, lost, reserve):
                 answer += 2
                 received.append(i+1)
             else:
-                answer +=1
+                answer += 1
     return answer
 

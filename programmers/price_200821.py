@@ -34,7 +34,9 @@ def solution_1(prices):
         answer.append(seconds)
     return answer
 
+
 answer = []
+
 
 def solution(prices):
     if len(prices) == 2:
