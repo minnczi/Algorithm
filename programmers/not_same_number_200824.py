@@ -21,3 +21,11 @@ def solution(arr):
             answer.append(arr[i])
     answer.append(arr[-1])
     return answer
+
+def solution(arr):
+    for i in range(0,len(arr)):
+        if arr[i] == arr[i-1]:
+            arr.pop(arr.index(i))
+            return solution(arr)
+        else:
+            return answer
