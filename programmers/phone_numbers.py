@@ -12,7 +12,7 @@ def solution(phone_book):
     return True
 
 #해쉬 사용한 풀이
-def solution(phone_book):
+def solution2(phone_book):
     answer = True
     hash_map = {}
     for phone_number in phone_book:
@@ -26,7 +26,7 @@ def solution(phone_book):
     return answer
 
 #다른 깔끔한 풀이
-def solution(phoneBook):
+def solution3(phoneBook):
     phoneBook = sorted(phoneBook)
 
     for p1, p2 in zip(phoneBook, phoneBook[1:]):
@@ -36,10 +36,10 @@ def solution(phoneBook):
 
 
 from itertools import combinations as c
-def solution(phoneBook):
+def solution4(phoneBook):
     answer = True
     sortedPB = sorted(phoneBook, key= len)
     for (a,b) in c( sortedPB,2):
         if a == b[:len(a)]:
             answer = False
-    return answer햣 
+    return answer
