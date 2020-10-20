@@ -1,3 +1,4 @@
+#trucks_on_the_bridge
 def solution(bridge_length, weight, truck_weights):
     queue = {1:truck_weights.pop(0)}
     print(queue)
