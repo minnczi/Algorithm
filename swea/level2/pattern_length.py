@@ -12,4 +12,3 @@ for test_case in range(1, T + 1):
         else:
             pass
     print(f'#{test_case} {cnt}')
-                  
