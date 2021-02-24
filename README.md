@@ -1,4 +1,4 @@
-# 알고리즘 문제 풀이 (Algorithm / Coding Test Practice)
+# **알고리즘** 문제 풀이 (Algorithm / Coding Test Practice)
 1일 1 알고리즘을 위해 :star:
 
 | Date           | Problems                                                     | 비고                                          |
@@ -12,4 +12,9 @@
 | **2021-02-15** | - [SWEA] 델타검색<br />- [SWEA] 부분집합<br />- [SWEA] Sum   | - Delta 활용<br />- Bit 연산자 활용           |
 | **2021-02-16** | - [SWEA] 4839 이진탐색<br />- [SWEA] 2001 파리퇴치<br />- [SWEA] 1210 Ladder 1 | - 완전 탐색<br />- 이진 탐색<br />- 선택 정렬 |
 | **2021-02-17** | - [SWEA] 10912 외로운 문자<br />- [SWEA] 1213 String<br />- [SWEA] 1221 GNS<br />- [SWEA] 10965 제곱수 만들기 | - string                                      |
+| **2021-02-18** | - [SWEA] 3143 가장 빠른 문자열 타이핑<br />- [SWEA] 5432 쇠막대기 자르기<br />- [SWEA] 4861 회문<br />- [SWEA] 회문2<br />- [SWEA] 4864 문자열 비교<br />- [SWEA] 4865 글자 수<br />- [SWEA] 10726 이진수 표현<br />- [SWEA] 10804 문자열의 거울상 | - String (adv.)                               |
+| **2021-02-19** |                                                              |                                               |
+| **2021-02-22** |                                                              |                                               |
+| **2021-02-23** |                                                              |                                               |
+| **2021-02-24** |                                                              |                                               |
 
