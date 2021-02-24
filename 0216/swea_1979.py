@@ -16,9 +16,7 @@ def check_place(puzzle):
                 # 이전까지 쌓인 연속 횟수가 k번 이었다면
                 if streak == k: 
                     answer += 1
-                    streak = 0
-                else:
-                    streak = 0
+                streak = 0
     # 세로 체크
     for j in range(len(puzzle)):
         for i in range(len(puzzle)):

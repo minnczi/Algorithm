@@ -1,3 +1,4 @@
+# 파이썬은 답 체크가 안되서 답 확인을 못해봐써ㅠㅠ
 import sys
 sys.stdin = open('10993_input.txt', 'r')
 

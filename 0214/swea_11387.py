@@ -8,4 +8,4 @@ for tc in range(1, T+1):
         damage = D * (1+n*L*0.01)
         total += damage
     
-    print(damage)
+    print("#%d %d" % (tc, total))
