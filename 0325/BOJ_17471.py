@@ -69,4 +69,4 @@ for i in range(N//2, 0, -1):
 if min_diff == 100000:
     min_diff = -1
 
-print(min_diff)
+print(min_diff) 
