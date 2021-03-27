@@ -38,7 +38,7 @@ def DFS(zone, zone_link):
     return 1
 
 min_diff = 100000
-for i in range(N//2, 0, -1):
+for i in range(1, N//2+1):
     # 한 선거구에 i명이 들어가는 모든 부분 집합
     zones = list(combinations(range(1, N+1), i))
     for zone1 in zones:
@@ -55,16 +55,15 @@ for i in range(N//2, 0, -1):
                 zone2.append(i)
                 zone2_link[i] = AL[i]
 
-        # 첫번째 분기: 만약 p1, p2의 인원차이가 현재 min보다 크다면, 더이상 체크 할 필요 없음
-        if abs(p1-p2) >= min_diff:
-            continue
 
         # 두번째 분기: 두 선거구가 다 연결되어 있다면 min_diff 값 치환
         result1 = DFS(zone1, zone1_link)
         result2 = DFS(zone2, zone2_link)
 
         if result1 and result2:
-            min_diff = abs(p1-p2)
+            # 첫번째 분기: 만약 p1, p2의 인원차이가 현재 min보다 크다면, 더이상 체크 할 필요 없음
+            if abs(p1-p2) < min_diff:
+                min_diff = abs(p1-p2)
         
 if min_diff == 100000:
     min_diff = -1
