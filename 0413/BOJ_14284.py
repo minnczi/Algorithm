@@ -1,6 +1,6 @@
 # BOJ14284
 # 다익스트라 알고리즘 사용
-from heapq import heappush, heappop
+from heapq import heappush
 import sys
 sys.stdin = open('input.txt', 'r')
 
