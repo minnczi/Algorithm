@@ -1,4 +1,4 @@
-# 트리의 전위순회
+# 트리의 중위순회
 import sys
 sys.stdin = open('inorder_input.txt', 'r')
 
