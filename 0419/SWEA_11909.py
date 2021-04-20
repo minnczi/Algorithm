@@ -36,7 +36,4 @@ for i in range(V-1):
     else:
         left[n1] = n2
 
-    print(preorder(n))
-    
-
 
