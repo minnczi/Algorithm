@@ -9,20 +9,38 @@
 N, x = map(int, input().split())
 num_list = list(map(int, input().split()))
 
-left = 0
-right = N-1
-mid = (left + right) // 2
+def find_left_key():
+    left = 0
+    right = N-1
+    key = -1
+    while left <= right:
+        mid = (left + right) // 2
+        if num_list[mid] >= x:
+            right = mid - 1
+            if num_list[mid] == x:
+                key = mid
+        else:
+            left = mid + 1
+    return key
 
-# 가장 첫 x가 나오는 지점 찾기
-while left <= right:
-    mid = (left + right) // 2
-    print(left, right, mid)
-    if mid >= x:
-        right = mid - 1
-    else:
-        left = mid + 1
+def find_right_key(key):
+    left = key
+    right = N-1
 
-print(mid)
-    
-# pivot을 기준으로 왼쪽 
+    while left <= right:
+        mid = (left + right) // 2
+        if num_list[mid] <= x:
+            left = mid + 1
+            if num_list[mid] == x:
+                key = mid
+        else:
+            right = mid - 1
+    return key
 
+left_key = find_left_key()
+
+if left_key == -1:
+    print(left_key)
+else:
+    right_key = find_right_key(left_key)
+    print(right_key - left_key + 1)
