@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+
+div, mod = divmod(b, 10)
+print(a * mod)
+div, mod = divmod(div, 10)
+print(a * mod)
+div, mod = divmod(div, 10)
+print(a * mod)
+print(a * b)
