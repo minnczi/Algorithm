@@ -10,7 +10,6 @@ class Solution:
     def maxArea(self, height: List[int]) -> int:
         l, tl, r, tr = 0, 0, len(height)-1, len(height)-1
         area = (r-l) * min(height[l], height[r])
-        print(area)
 
         while tl < tr:
             tmp_area = (tr-tl) * min(height[tl], height[tr])
