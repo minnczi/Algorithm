@@ -9,4 +9,4 @@ class Solution:
         
         word += word1[short_len:long_len] + word2[short_len:long_len]
         return word
-        
+        ````
